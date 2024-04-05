@@ -19,3 +19,6 @@ echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.de
 #echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 echo 'src-git fichenx https://github.com/fichenx/openwrt-package' >>feeds.conf.default
 #echo 'src-git wadoro https://github.com/wadoro/openwrt-packages' >>feeds.conf.default
+git clone https://github.com/bootli/luci-app-v2ray-server.git package/v2ray
+echo 'src-git lucky https://github.com/gdy666/luci-app-lucky' >>feeds.conf.default
+
