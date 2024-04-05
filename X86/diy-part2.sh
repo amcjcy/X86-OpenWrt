@@ -15,6 +15,12 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 #2. web登陆密码从password修改为空
 sed -i 's/V4UetPzk$CYXluq4wUazHjmCDBCqXF./cEuy4sGe$z49lYVt0VI05HMaYKsAvP1/g' package/lean/default-settings/files/zzz-default-settings
 
+#3.固件版本号添加个人标识和日期
+sed -i "s/DISTRIB_DESCRIPTION='OpenWrt '/DISTRIB_DESCRIPTION='$(TZ=UTC-8 date +%Y.%m.%d)@W '/g" package/lean/default-settings/files/zzz-default-settings
+
+#4.编译的固件文件名添加日期
+sed -i 's/IMG_PREFIX:=$(VERSION_DIST_SANITIZED)/IMG_PREFIX:=$(shell TZ=UTC-8 date "+%Y%m%d")-$(VERSION_DIST_SANITIZED)/g' include/image.mk
+
 #5.更换lede源码中自带argon主题
 rm -rf feeds/luci/themes/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon 
 # 替换默认主题为 luci-theme-argon
