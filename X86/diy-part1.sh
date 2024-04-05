@@ -15,7 +15,7 @@
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 #echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-#echo 'src-git fichenx https://github.com/fichenx/openwrt-package' >>feeds.conf.default
-echo 'src-git wadoro https://github.com/wadoro/openwrt-packages' >>feeds.conf.default
+echo 'src-git fichenx https://github.com/fichenx/openwrt-package' >>feeds.conf.default
+#echo 'src-git wadoro https://github.com/wadoro/openwrt-packages' >>feeds.conf.default
