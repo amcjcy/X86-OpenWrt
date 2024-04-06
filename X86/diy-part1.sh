@@ -15,5 +15,6 @@
 
 # Add a feed source
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small-package' >>feeds.conf.default
+#echo 'src-git small https://github.com/kenzok8/small-package' >>feeds.conf.default
+echo 'src-git fichenx https://github.com/fichenx/openwrt-package' >>feeds.conf.default
 git clone https://github.com/bootli/luci-app-v2ray-server.git package/v2ray
