@@ -33,3 +33,6 @@ sed -i '/exit 0/i sed -i "s/nas/services/g" /usr/lib/lua/luci/controller/vsftpd.
 
 sed -i '/sed -i "s\/nas\/services\/g" \/usr\/lib\/lua\/luci\/controller\/alist.lua/d'  package/lean/default-settings/files/zzz-default-settings
 sed -i '/exit 0/i sed -i "s/nas/services/g" /usr/lib/lua/luci/controller/alist.lua'  package/lean/default-settings/files/zzz-default-settings
+
+sed -i '/sed -i "s\/vpn\/services\/g" \/usr\/lib\/lua\/luci\/controller\/zerotier.lua/d'  package/lean/default-settings/files/zzz-default-settings
+sed -i '/exit 0/i sed -i "s/vpn/services/g" /usr/lib/lua/luci/controller/zerotier.lua'  package/lean/default-settings/files/zzz-default-settings
