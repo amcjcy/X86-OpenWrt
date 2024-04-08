@@ -26,5 +26,5 @@ rm -rf feeds/luci/themes/luci-theme-argon && git clone -b 18.06 https://github.c
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
 #8.修改插件位置
-sed -i '/sed -i "s\/nas\/services\/g" \/usr\/lib\/lua\/luci\/controller\/vsftpd.lua/d'  package/lean/default-settings/files/zzz-default-settings
-sed -i '/exit 0/i sed -i "s/nas/services/g" /usr/lib/lua/luci/controller/vsftpd.lua'  package/lean/default-settings/files/zzz-default-settings
+#sed -i '/sed -i "s\/nas\/services\/g" \/usr\/lib\/lua\/luci\/controller\/vsftpd.lua/d'  package/lean/default-settings/files/zzz-default-settings
+#sed -i '/exit 0/i sed -i "s/nas/services/g" /usr/lib/lua/luci/controller/vsftpd.lua'  package/lean/default-settings/files/zzz-default-settings
